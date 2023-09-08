@@ -561,7 +561,7 @@ $(document).ready(function () {
     Lockr.set('pastUser', 'yes');
 
     Swal.fire({
-      html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Welcome! Select a break time, go to your favorite website and when the time's up, your tab will self-destruct!</p>",
+      html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Chọn thời gian lướt web và bắt đầu truy cập trang web yêu thích của bạn và khi hết thời gian, tab của bạn sẽ tự đóng!</p>",
       background: "#353535",
 
       color: "white",
@@ -1315,7 +1315,7 @@ function deleteTab(tab, tabLink) {
 //about added
 document.getElementById('aboutcorner').addEventListener('click',function(){
   Swal.fire({
-    html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Welcome! Select a break time, go to your favorite website and when the time's up, your tab will self-destruct!</p>",
+    html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Chọn thời gian lướt web và bắt đầu truy cập trang web yêu thích của bạn và khi hết thời gian, tab của bạn sẽ tự đóng!</p>",
     background: "#353535",
     color: "white",
     icon: "info",
