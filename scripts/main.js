@@ -249,7 +249,7 @@ const saAddSite = async () => {
       }
       if (!document.getElementById("inputSiteName").value){
           Swal.showValidationMessage(
-            '<i class="fa fa-info-circle" style="font-family:Product sans"></i> Please Enter the Site Name'
+            '<i class="fa fa-info-circle" style="font-family:Product sans"></i> Vui lòng nhập website'
           );
       }
       return [
@@ -302,28 +302,28 @@ const addSite = () => {
     $("#mm1").modal("toggle");
   } else if (flaglink === 1 && flagname != 1) {
     document.getElementById("error").innerHTML =
-      "<p style='color:#FF0000;font-family:Product Sans'>ERROR: Incorrect website URL</p>";
+      "<p style='color:#FF0000;font-family:Product Sans'>Lỗi: địa chỉ website không đúng</p>";
     document.getElementById("error").style.display = "block";
     document.getElementById("erro").innerHTML = "";
     document.getElementById("erro").style.display = "hidden";
   } else if (!ValidUrl() && flagname != 1) {
     document.getElementById("error").innerHTML =
-      "<p style='color:#FF0000;font-family:Product Sans'>ERROR: Incorrect website URL</p>";
+      "<p style='color:#FF0000;font-family:Product Sans'>Lỗi: địa chỉ website không đúng</p>";
     document.getElementById("error").style.display = "block";
     document.getElementById("erro").innerHTML = "";
     document.getElementById("erro").style.display = "hidden";
   } else if (flagname === 1 && flaglink != 1) {
     document.getElementById("erro").innerHTML =
-      "<p style='color:#FF0000;font-family:Product Sans''>ERROR: No label provided</p>";
+      "<p style='color:#FF0000;font-family:Product Sans''>Lỗi: Không có nhãn được cung cấp</p>";
     document.getElementById("erro").style.display = "block";
     document.getElementById("error").innerHTML = "";
     document.getElementById("error").style.display = "hidden";
   } else if (flagname == 1 && flaglink === 1) {
     document.getElementById("error").innerHTML =
-      "<p style='color:#FF0000;font-family:Product Sans''>ERROR: Incorrect website URL</p>";
+      "<p style='color:#FF0000;font-family:Product Sans''>Lỗi: địa chỉ website không đúng</p>";
     document.getElementById("error").style.display = "block";
     document.getElementById("erro").innerHTML =
-      "<p style='color:#FF0000;font-family:Product Sans''>ERROR: No label provided</p>";
+      "<p style='color:#FF0000;font-family:Product Sans''>Lỗi: Không có nhãn được cung cấp</p>";
     document.getElementById("erro").style.display = "block";
   }
 };
@@ -411,24 +411,24 @@ $(document).ready(function () {
       document.getElementById("inputSiteName").value = "";
       $('#mm1').modal1('toggle');
     } else if (flaglink === 1 && flagname != 1) {
-      document.getElementById("error").innerHTML = "<p style='color:#FF0000;font-family:Product Sans'>ERROR: Incorrect website URL</p>";
+      document.getElementById("error").innerHTML = "<p style='color:#FF0000;font-family:Product Sans'>Lỗi: Không có nhãn được cung cấp</p>";
       document.getElementById("error").style.display = "block";
       document.getElementById("erro").innerHTML = "";
       document.getElementById("erro").style.display = "hidden";
     } else if (!ValidUrl() && flagname != 1) {
-      document.getElementById("error").innerHTML = "<p style='color:#FF0000;font-family:Product Sans'>ERROR: Incorrect website URL</p>";
+      document.getElementById("error").innerHTML = "<p style='color:#FF0000;font-family:Product Sans'>Lỗi: Không có nhãn được cung cấp</p>";
       document.getElementById("error").style.display = "block";
       document.getElementById("erro").innerHTML = "";
       document.getElementById("erro").style.display = "hidden";
     } else if (flagname === 1 && flaglink != 1) {
-      document.getElementById("erro").innerHTML = "<p style='color:#FF0000;font-family:Product Sans''>ERROR: No label provided</p>";
+      document.getElementById("erro").innerHTML = "<p style='color:#FF0000;font-family:Product Sans''>Lỗi: Không có nhãn được cung cấp</p>";
       document.getElementById("erro").style.display = "block";
       document.getElementById("error").innerHTML = "";
       document.getElementById("error").style.display = "hidden";
     } else if (flagname == 1 && flaglink === 1) {
-      document.getElementById("error").innerHTML = "<p style='color:#FF0000;font-family:Product Sans''>ERROR: Incorrect website URL</p>";
+      document.getElementById("error").innerHTML = "<p style='color:#FF0000;font-family:Product Sans''>Lỗi: Không có nhãn được cung cấp</p>";
       document.getElementById("error").style.display = "block";
-      document.getElementById("erro").innerHTML = "<p style='color:#FF0000;font-family:Product Sans''>ERROR: No label provided</p>";
+      document.getElementById("erro").innerHTML = "<p style='color:#FF0000;font-family:Product Sans''>Lỗi: Không có nhãn được cung cấp</p>";
       document.getElementById("erro").style.display = "block";
     }
     event.preventDefault();
@@ -436,7 +436,7 @@ $(document).ready(function () {
 
   $('.content').on('click', '.delete', function () {
     Swal.fire({
-      html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Are you sure to delete this website?</p>",
+      html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Bạn chắc chắn muốn xóa website này?</p>",
       background: "#353535",
       color: "white",
       confirmButtonText: "Delete",
@@ -491,7 +491,7 @@ $(document).ready(function () {
       }
     } else {
       Swal.fire({
-        html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Please enter a valid website URL!</p>",
+        html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Vui lòng nhập đúng địa chỉ website!</p>",
         background: "#353535",
         color: "white",
         icon: "error",
@@ -511,7 +511,7 @@ $(document).ready(function () {
   //       }
   //     } else {
   //       Swal.fire({
-  //         html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Please enter a valid website URL!</p>",
+  //         html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Vui lòng nhập đúng địa chỉ website!</p>",
   //         background: "#353535",
   //         icon: "error",
 
@@ -530,7 +530,7 @@ $(document).ready(function () {
           }
         } else {
           Swal.fire({
-            html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Please enter a valid website URL!</p>",
+            html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Vui lòng nhập đúng địa chỉ website!</p>",
             background: "#353535",
             icon: "error",
 
@@ -900,12 +900,12 @@ function OpenInNew(min, tab, type) {
       complete = true;
       diff = 0;
 
-      document.getElementById("header").innerHTML = "Time's up!";
-      document.getElementById("subHeader").innerHTML = "Get back to work!";
+      document.getElementById("header").innerHTML = "Hoàn thành rồi!";
+      document.getElementById("subHeader").innerHTML = "Tiếp tục làm thôi!";
       document.title = "Take a Break";
 
       Swal.fire({
-        title: "Time's up, back to work!",
+        title: "Hoàn thành rồi, tiếp tục làm thôi!",
         html: quote,
         icon: "success",
         background: "#353535",
@@ -925,7 +925,7 @@ function OpenInNew(min, tab, type) {
       setTimeout(ale, 14000);
 
       function ale() {
-        alert("That's all!");
+        alert("Đã xong!");
         window.location = "./index.html";
       };
       $.fancybox.close();
