@@ -653,13 +653,13 @@ $("#audioAlert").click(function (event) {
 function Custom(e) {
   $('.content').removeClass('visible');
   Swal.fire({
-    title: "Custom Time",
-    html: "<p style='font-family:Product Sans; letter-spacing:1px;'>How long do you want a break?</p>",
+    title: "Tùy chỉnh thời gian",
+    html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Bạn muốn truy cập web trong bao lâu?</p>",
     input: 'text',
     animation: "slide-from-top",
-    confirmButtonText: "Let's go!",
+    confirmButtonText: "Bắt đầu thôi",
     showCancelButton: true,
-    inputPlaceholder: "35m, 1.5h, etc.",
+    inputPlaceholder: "35m, 1.5h,...",
     background: "#353535",
     color: "white",
     inputColor: '#1f1f1f',
@@ -672,7 +672,7 @@ function Custom(e) {
       }
       if (inputValue === "") {
         Swal.fire({
-          html: "<p style='font-family:Product Sans; letter-spacing:1px;'>You need to write something!</p>",
+          html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Viết điều gì đó bạn thích!</p>",
           text: "",
           background: "#353535",
 
@@ -711,7 +711,7 @@ function Custom(e) {
 
       if (isZero) {
         Swal.fire({
-          html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Number should be greater than 0!</p>",
+          html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Số phải lớn hơn 0!</p>",
           background: "#353535",
           icon: "error",
           color: "white",
@@ -774,7 +774,7 @@ function Custom(e) {
         return true
       } else {
         Swal.fire({
-          html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Please enter valid number!</p>",
+          html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Vui lòng nhập số hợp lệ</p>",
           background: "#353535",
           icon: "error",
           color: "white",
@@ -950,15 +950,15 @@ function OpenInNew(min, tab, type) {
         // clearing/stoping timeout to execute 
         clearTimeout(myTimeout);
 
-        document.title = "Take a Break";
+        document.title = "Bắt đầu nào";
         Swal.fire({
-          title: "You closed out early!",
+          title: "Bạn đã đóng tab sớn!",
           background: "#353535",
           color: "white",
           showCancelButton: "true",
           imageSize: "200x200",
-          confirmButtonText: "Keep Browsing!",
-          cancelButtonText: "I'm done!",
+          confirmButtonText: "Giữ trình duyệt của bạn!",
+          cancelButtonText: "Bạn đã hoàn thành!",
           animation: "slide-from-top",
           filter: 'blur(10px)',
           allowOutsideClick: false,
@@ -987,13 +987,13 @@ function OpenInNew(min, tab, type) {
 //*stop button handler
 stopBtn.addEventListener("click",()=>{
     Swal.fire({
-        title: "Stop this timer ?",
+        title: "Bạn dừng ngay bây giờ chứ?",
         background: "#353535",
         color: "white",
         showCancelButton: "true",
         imageSize: "200x200",
-        confirmButtonText: "Yes, close it",
-        cancelButtonText: "No, wait!",
+        confirmButtonText: "Đúng, đóng nó!",
+        cancelButtonText: "Không, tiếp tục lướt web!",
         animation: "slide-from-top",
         filter: 'blur(10px)',
         allowOutsideClick: false,
@@ -1049,8 +1049,8 @@ function startTimer(duration, display) {
         num = num - (num / timediff);
        
       if (diff == 60) {
-        display.textContent = "1 minute";
-        document.title = "1 minute";
+        display.textContent = "1 phút";
+        document.title = "1 phút";
       
 
         secEle.textContent = seconds;
@@ -1058,7 +1058,7 @@ function startTimer(duration, display) {
 
 
       } else if (diff < 60) {
-        display.textContent = seconds + " seconds";
+        display.textContent = seconds + " giây";
 
         // stops the timer to be displayed on title till the loading page is shown
         if (first == true) {
@@ -1066,13 +1066,13 @@ function startTimer(duration, display) {
             first = false;
           }, 6000);
         } else {
-          document.title = seconds + " seconds";
+          document.title = seconds + " giây";
         }
         secEle.textContent = seconds;
         minEle.textContent = minutes;
         
       } else {
-        display.textContent = minutes + ":" + seconds + " minutes";
+        display.textContent = minutes + ":" + seconds + " phút";
 
         // stops the timer to be displayed on title till the loading page is shown
         if (first == true) {
@@ -1080,7 +1080,7 @@ function startTimer(duration, display) {
             first = false;
           }, 6000);
         } else {
-          document.title = minutes + ":" + seconds + " minutes";
+          document.title = minutes + ":" + seconds + " phút";
         }
         secEle.textContent = seconds;
         minEle.textContent = minutes;
@@ -1099,9 +1099,9 @@ function startTimer(duration, display) {
       //* pausing the timer 
       if (complete == false && windowCount == 0) {
         
-        document.title = "Take a Break";
+        document.title = "Bắt đầu lướt web";
         setTimeout(() => {
-          document.title = "Take a Break - Self-Destructing Tabs!";
+          document.title = "Bắt đầu lướt web thông minh!";
         }, 1500);
 
         clearInterval(setInt);
@@ -1122,10 +1122,10 @@ function startTimer(duration, display) {
       //    console.info("window.performance works fine on this browser");
       //   }
       if ((performance.navigation.type == performance.navigation.TYPE_RELOAD) && (diff > 0)) {
-        // console.info( "This page is  reloaded");
+        // console.info( "Trang này sẽ khởi động lại");
 
         $(window).bind('beforeunload', function () {
-          return "Do you want to leave";
+          return "Bạn có muốn tắt không?";
         });
       }
 
@@ -1138,8 +1138,8 @@ function startTimer(duration, display) {
 
         function showNotification1() {
           if (flag1 == 1) {
-            const notification = new Notification("New Message from TakeABreak!", {
-              body: "50% of your break is over",
+            const notification = new Notification("Tin nhắn mới từ ThanhDatIO", {
+              body: "50% thời gian đã qua",
               icon: "assets/banner.png",
               vibrate: true
             })
@@ -1156,8 +1156,8 @@ function startTimer(duration, display) {
 
         function showNotification2() {
           if (flag1 == 1) {
-            const notification = new Notification("New Message from TakeABreak!", {
-              body: "90% of your break is over",
+            const notification = new Notification("Tin nhắn mới từ ThanhDatIO!", {
+              body: "90% thời gian đã qua",
               icon: "assets/banner.png",
               vibrate: true
             })
