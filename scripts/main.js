@@ -11,7 +11,7 @@ async function getJson(url) {
         const promise = new Promise((resolve, reject) => {
           let image = data.results[random];
           console.log(image.urls.regular);
-          resolve(`<div><div class='moti_title'>Here's a quote to keep you motivated:</div>
+          resolve(`<div><div class='moti_title'>Câu nói hay tiếp thêm động lực cho bạn:</div>
     <span class='moti_qoute'>
         <img src="${image.urls.small}" alt="" srcset="">
     </span> </div>`);
