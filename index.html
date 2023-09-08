@@ -11,24 +11,24 @@
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/sweetalert.min.js"></script>
     <!-- Primary Meta Tags -->
-    <title>Take a Break - Self-Destructing Tabs</title>
-    <meta name="title" content="Take a Break - Self-Destructing Tabs">
+    <title>Lướt web thông minh</title>
+    <meta name="title" content="Lướt web thông minh">
     <meta name="description"
-        content="Tackle procrastination by using self-destructing tabs and boost your productivity.">
+        content="Giải quyết sự trì hoãn bằng cách sử dụng các tab tự hủy và tăng năng suất của bạn.">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://breaks.eu.org/">
-    <meta property="og:title" content="Take a Break - Self-Destructing Tabs">
+    <meta property="og:url" content="https://www.thanhdat.io">
+    <meta property="og:title" content="Lướt web thông minh">
     <meta property="og:description"
-        content="Tackle procrastination by using self-destructing tabs and boost your productivity.">
+        content="Giải quyết sự trì hoãn bằng cách sử dụng các tab tự hủy và tăng năng suất của bạn.">
     <meta property="og:image" content="assets/banner.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://breaks.eu.org/">
-    <meta property="twitter:title" content="Take a Break - Self-Destructing Tabs">
+    <meta property="twitter:url" content="https://www.thanhdat.io">
+    <meta property="twitter:title" content="Lướt web thông minh">
     <meta property="twitter:description"
-        content="Tackle procrastination by using self-destructing tabs and boost your productivity.">
+        content="Giải quyết sự trì hoãn bằng cách sử dụng các tab tự hủy và tăng năng suất của bạn.">
     <meta property="twitter:image" content="assets/banner.png">
 
 </head>
@@ -49,12 +49,12 @@
             <p id="show"></p>
             <label class="switch" id="switch1">
                 <input type="checkbox" id="notification">
-                <span onclick="Notif_Click()">Notifications</span>
+                <span onclick="Notif_Click()">Thông báo</span>
             </label>
             <br>
             <label class="switch" id="switch2" >
                 <input type="checkbox" id="audioAlert">
-                <span onclick="Audio_Click()">Audio Alerts</span>
+                <span onclick="Audio_Click()">Âm cảnh báo</span>
             </label>
           
         </div>
@@ -72,7 +72,7 @@
             <img src="assets/logo.svg" alt="icon" id="logo-img">
         </div>
     </div>
-    <h1 id="header">Take a Break</h1>
+    <h1 id="header">Lướt web thông minh</h1>
     <div class="circular-container">
         <div class="container">
             <div class="text-container">
@@ -82,19 +82,19 @@
             </div>
         </div>
     </div>
-    <h2 id="subHeader" href="">Select a time to start your break</h2>
+    <h2 id="subHeader" href="">Chọn thời gian lướt web</h2>
     <div class="extra-btn">
-        <button class="pause-btn">Pause</button>
-        <button class="stop-btn">Stop</button>
+        <button class="pause-btn">Tạm dừng</button>
+        <button class="stop-btn">Đóng</button>
     </div>
     <div id="time" style="display: none"></div>
     <div class="buttons" id="buttons">
         <ul>
 
-            <li><a class="time-button" id="btn_front" onclick="choice(this,5)">5 min</a></li>
-            <li><a class="time-button" id="btn_midL" onclick="choice(this,10)">10 min</a></li>
-            <li><a class="time-button" id="btn_midR" onclick="choice(this,15)">15 min</a></li>
-            <li><a class="time-button" id="btn_end" onclick="Custom(this)">Custom</a></li>
+            <li><a class="time-button" id="btn_front" onclick="choice(this,5)">5 phút</a></li>
+            <li><a class="time-button" id="btn_midL" onclick="choice(this,10)">10 phút</a></li>
+            <li><a class="time-button" id="btn_midR" onclick="choice(this,15)">15 phút</a></li>
+            <li><a class="time-button" id="btn_end" onclick="Custom(this)">Tùy chỉnh</a></li>
 
 
         </ul>
@@ -102,7 +102,7 @@
 
     <div class="content" style="display: none">
         <div class="custom-url">
-            <h3 id="content-label">Enter website directly</h3>
+            <h3 id="content-label">Nhập website muốn truy cập</h3>
             <div class="enterUrlDiv">
                 <input id="enterUrl" pattern="https?://.+"
                     class="form-control ui-autocomplete-input" placeholder="Go to..." name="keywords" type="url"
@@ -110,7 +110,7 @@
                 <a id="urlClick" class="iconfont icon-arrow-right"></a>
             </div>
         </div>
-        <h3 id="content-label">Or, add websites/use pre-added websites</h3>
+        <h3 id="content-label">Hoặc, thêm website</h3>
         <div class="website_grid">
             <ul class="rig columns-6 websites" id="grid">
             </ul>
@@ -119,23 +119,23 @@
 
     <div class="buttons" id="takeAnotherButton" style="display: none">
         <ul>
-            <li><a class="takeAnother" id="takeAnother" href="index.html">Take another break?</a></li>
+            <li><a class="takeAnother" id="takeAnother" href="index.html">Truy cập nữa chứ?</a></li>
         </ul>
     </div>
 
 
     <footer>
 
-        <div id="author" class="footer-part">Copyright © Daksh P. Jain</div>
+        <div id="author" class="footer-part">ThanhDatIO</div>
         <div id="social_icons">
             <li>
-                <a href="https://daksh.eu.org" target="_blank" title="Website">
+                <a href="https://www.thanhdat.io" target="_blank" title="Website">
                     <span class="iconfont icon-web">
                     </span>
                 </a>
             </li>
             <li>
-                <a href="https://github.com/daksh777/takeabreak" target="_blank " title="GitHub">
+                <a href="https://www.thanhdat.io" target="_blank " title="GitHub">
                     <span class="iconfont icon-github" style="padding-left: 15px;">
                     </span>
                 </a>
