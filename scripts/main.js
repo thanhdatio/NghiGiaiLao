@@ -858,7 +858,7 @@ function OpenInNew(min, tab, type) {
   
   if (count == 0) {
        //* as soon as newtab opens 
-    pauseBtn.textContent = "Pause"
+    pauseBtn.textContent = "Tạm dừng"
     count = 1;
     time = min * 60000 + 6000; // Added Extra 6 seconds for loading page
     var duration = 60 * min;
@@ -1186,15 +1186,15 @@ pauseBtn.addEventListener("click",(e)=>{
          
        
        
-    if(e.target.textContent == "Pause") {
-        e.target.textContent = "Resume"
+    if(e.target.textContent == "Tạm dừng") {
+        e.target.textContent = "Tiếp tục"
        
         clearInterval(setInt);
         
     }
-    else if(e.target.textContent == "Resume"){
+    else if(e.target.textContent == "Tiếp tục"){
         console.log('clicked');
-        e.target.textContent = "Pause"
+        e.target.textContent = "Tạm dừng"
 
         return setInt =  setInterval(timer, 1000);
     }
