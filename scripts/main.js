@@ -227,13 +227,13 @@ DailyQuotes();
 var array1 = [];
 const saAddSite = async () => {
   const { value: formValues } = await Swal.fire({
-    title: "Add custom Site",
+    title: "Thêm website",
     html:
       '<div style="font-family:Product Sans; letter-spacing:1px; margin:0;">' +
-      '<input id="inputSiteName" class="swal2-input" placeholder="Name" autofocus style:"height: 2.625em; padding: 0 25px; background: #1f1f1f;">' +
+      '<input id="inputSiteName" class="swal2-input" placeholder="Tên website" autofocus style:"height: 2.625em; padding: 0 25px; background: #1f1f1f;">' +
       ' <p style="display: none; margin-top: 4px; margin-left: 3px;" id="erro"></p>' +
       "<br/>" +
-      '<input type="url" id="inputSiteLink" class="swal2-input" placeholder="Link" autofocus>' +
+      '<input type="url" id="inputSiteLink" class="swal2-input" placeholder="Địa chỉ website" autofocus>' +
       '<p style="display: none; margin-top: 4px; margin-left: 3px;" id="error"></p>' +
       "</div>",
     background: "#353535",
