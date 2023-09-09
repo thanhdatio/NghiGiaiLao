@@ -439,7 +439,7 @@ $(document).ready(function () {
       html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Bạn chắc chắn muốn xóa website này?</p>",
       background: "#353535",
       color: "white",
-      confirmButtonText: "Delete",
+      confirmButtonText: "Xóa",
       showCancelButton: true,
       animation: "slide-from-top",
       filter: 'blur(10px)',
@@ -561,7 +561,7 @@ $(document).ready(function () {
     Lockr.set('pastUser', 'yes');
 
     Swal.fire({
-      html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Chọn thời gian lướt web và bắt đầu truy cập trang web yêu thích của bạn và khi hết thời gian, tab của bạn sẽ tự đóng!</p>",
+      html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Chọn thời gian lướt web và bắt đầu truy cập trang web yêu thích của bạn, khi hết thời gian theo quy định của riêng bạn, tab sẽ tự đóng!</p>",
       background: "#353535",
 
       color: "white",
@@ -1315,7 +1315,7 @@ function deleteTab(tab, tabLink) {
 //about added
 document.getElementById('aboutcorner').addEventListener('click',function(){
   Swal.fire({
-    html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Chọn thời gian lướt web và bắt đầu truy cập trang web yêu thích của bạn và khi hết thời gian, tab của bạn sẽ tự đóng!</p>",
+    html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Chọn thời gian lướt web và bắt đầu truy cập trang web yêu thích của bạn, khi hết thời gian theo quy định của riêng bạn, tab sẽ tự đóng!</p>",
     background: "#353535",
     color: "white",
     icon: "info",
