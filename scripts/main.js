@@ -13,7 +13,7 @@ async function getJson(url) {
           console.log(image.urls.regular);
           resolve(`<div><div class='moti_title'>Câu nói hay tiếp thêm động lực cho bạn:</div>
     <span class='moti_qoute'>
-        <img src="${image.urls.small}" alt="" srcset="">
+        <img src="assets/taptrung.png" alt="" srcset="">
     </span> </div>`);
 
         })
@@ -28,7 +28,7 @@ async function DailyQuotes() {
   quote = await getJson(apiUrl)
 }
 DailyQuotes();
-//Random quote generated
+//Random quote generated //<img src="${image.urls.small}" alt="" srcset="">
 
 (function (root, factory) {
 
