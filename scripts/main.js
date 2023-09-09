@@ -13,7 +13,7 @@ async function getJson(url) {
           console.log(image.urls.regular);
           resolve(`<div><div class='moti_title'>Câu nói hay tiếp thêm động lực cho bạn:</div>
     <span class='moti_qoute'>
-        <img src="assets/taptrung.png" alt="" srcset="" style="width:320px;height:180px;>
+        <img src="assets/taptrung.png" alt="" srcset="" style="width:320px;height:180px;">
     </span> </div>`);
 
         })
