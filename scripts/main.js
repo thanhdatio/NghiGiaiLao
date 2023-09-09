@@ -11,9 +11,9 @@ async function getJson(url) {
         const promise = new Promise((resolve, areject) => {
           let image = data.results[random];
           console.log(image.urls.regular);
-          resolve(`<div><div class='moti_title'>Bạn là người tuyệt vời nhất</div>
+          resolve(`<div><div class='moti_title'>ThanhDatIO</div>
     <span class='moti_qoute'>
-        <img src="assets/taptrung.png" alt="" srcset="" style="width:320px;height:180px;">
+        <img src="assets/taptrung.png" alt="" srcset="" style="width:640px;height:360px;">
     </span> </div>`);
 
         })
@@ -902,10 +902,10 @@ function OpenInNew(min, tab, type) {
 
       document.getElementById("header").innerHTML = "Hoàn thành rồi!";
       document.getElementById("subHeader").innerHTML = "Tiếp tục làm thôi!";
-      document.title = "Take a Break";
+      document.title = "Bắt đầu nào";
 
       Swal.fire({
-        title: "Hoàn thành rồi, tiếp tục làm thôi!",
+        title: "Bạn làm rất tốt!",
         html: quote,
         icon: "success",
         background: "#353535",
