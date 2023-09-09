@@ -769,12 +769,12 @@ function Custom(e) {
       }
       if (convertIntoMinVal > 0) {
         choice(e, convertIntoMinVal);
-        document.getElementById("btn_end").innerHTML = parseFloat(convertIntoMinVal).toFixed(2) + " min";
+        document.getElementById("btn_end").innerHTML = parseFloat(convertIntoMinVal).toFixed(2) + " phút";
         $(".content").css("display", "inline");
         return true
       } else {
         Swal.fire({
-          html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Vui lòng nhập số hợp lệ</p>",
+          html: "<p style='font-faútmily:Product Sans; letter-spacing:1px;'>Vui lòng nhập số hợp lệ</p>",
           background: "#353535",
           icon: "error",
           color: "white",
