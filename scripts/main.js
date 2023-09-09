@@ -1236,12 +1236,16 @@ function updateSites() {
     siteName = sites[i][0];
     siteLabel = sites[i][1];
 
-    if (siteName == 'Youtube') {
-      imgSrc = 'assets/youtube.png'
+    if (siteName == "Youtube") {
+      imgSrc = "assets/youtube.png"
     } else if (siteName == "Facebook") {
       imgSrc = "assets/facebook.png"
     } else if (siteName == "Instagram") {
       imgSrc = "assets/instagram.png"
+    } else if (siteName == "Google") {
+      imgSrc = "assets/google.png"
+    } else if (siteName == "Twitter") {
+      imgSrc = "assets/twitter.png"
     } else {
       imgSrc = 'https://logo.clearbit.com/' + siteName.toLowerCase();
     }
