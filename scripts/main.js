@@ -8,7 +8,7 @@ async function getJson(url) {
     fetch(`https://api.unsplash.com/search/photos?query=motivational&client_id=${api_key}`)
       .then(response => response.json())
       .then((data) => {
-        const promise = new Promise((resolve, reject) => {
+        const promise = new Promise((resolve, areject) => {
           let image = data.results[random];
           console.log(image.urls.regular);
           resolve(`<div><div class='moti_title'>Câu nói hay tiếp thêm động lực cho bạn:</div>
@@ -561,7 +561,7 @@ $(document).ready(function () {
     Lockr.set('pastUser', 'yes');
 
     Swal.fire({
-      html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Đây là công cụ đơn giản giúp bạn chủ động kiểm soát được thời gian truy cập các website giải trí để tâpj trung vào công việc. Hãy thêm các website bạn thường dùng để giải trí, chọn thời gian truy cập theo quy định của riêng bạn, khi hết thời gian tab sẽ tự đóng. Chúc bạn luôn giữ được sự tập trung khi làm việc - ThanhDatIO</p>",
+      html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Đây là công cụ đơn giản có thể giúp bạn chủ động kiểm soát thời gian truy cập các website giải trí, qua đó giữ được sự tập trung vào công việc. Hãy thêm các website bạn thường dùng, chọn thời gian truy cập theo quy định của riêng bạn, tab sẽ tự đóng khi hết thời gian theo quy định. Chúc bạn luôn giữ được sự tập trung khi làm việc - ThanhDatIO</p>",
       background: "#353535",
 
       color: "white",
@@ -1230,7 +1230,7 @@ var sites = [
 
 function updateSites() {
   $(".rig.columns-6.websites").append(
-    "<a data-toggle='modal1' onclick='saAddSite()' data-target='#mm1' class='addCustom'><li class='outbound-link'><img id='Add Site' src='assets/plus.png' onclick='saAddSite()'><p>Add Site</p></li></a>"
+    "<a data-toggle='modal1' onclick='saAddSite()' data-target='#mm1' class='addCustom'><li class='outbound-link'><img id='Add Site' src='assets/plus.png' onclick='saAddSite()'><p>Thêm website</p></li></a>"
   );
   for (i = 0; i < sites.length; i++) {
     siteName = sites[i][0];
@@ -1315,7 +1315,7 @@ function deleteTab(tab, tabLink) {
 //about added
 document.getElementById('aboutcorner').addEventListener('click',function(){
   Swal.fire({
-    html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Đây là công cụ đơn giản giúp bạn chủ động kiểm soát được thời gian truy cập các website giải trí để tâpj trung vào công việc. Hãy thêm các website bạn thường dùng để giải trí, chọn thời gian truy cập theo quy định của riêng bạn, khi hết thời gian tab sẽ tự đóng. Chúc bạn luôn giữ được sự tập trung khi làm việc - ThanhDatIO</p>",
+    html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Đây là công cụ đơn giản có thể giúp bạn chủ động kiểm soát thời gian truy cập các website giải trí, qua đó giữ được sự tập trung vào công việc. Hãy thêm các website bạn thường dùng, chọn thời gian truy cập theo quy định của riêng bạn, tab sẽ tự đóng khi hết thời gian theo quy định. Chúc bạn luôn giữ được sự tập trung khi làm việc - ThanhDatIO</p>",
     background: "#353535",
     color: "white",
     icon: "info",
