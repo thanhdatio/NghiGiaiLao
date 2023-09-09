@@ -1238,14 +1238,10 @@ function updateSites() {
 
     if (siteName == 'Youtube') {
       imgSrc = 'assets/youtube.png'
-    } else if (siteName == "Twitter") {
-      imgSrc = "assets/twitter.png"
     } else if (siteName == "Facebook") {
       imgSrc = "assets/facebook.png"
     } else if (siteName == "Instagram") {
       imgSrc = "assets/instagram.png"
-    } else if (siteName == 'Google') {
-      imgSrc = 'assets/google.png'
     } else {
       imgSrc = 'https://logo.clearbit.com/' + siteName.toLowerCase();
     }
