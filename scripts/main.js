@@ -561,7 +561,7 @@ $(document).ready(function () {
     Lockr.set('pastUser', 'yes');
 
     Swal.fire({
-      html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Chọn thời gian lướt web và bắt đầu truy cập trang web yêu thích của bạn, khi hết thời gian theo quy định của riêng bạn, tab sẽ tự đóng!</p>",
+      html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Đây là công cụ đơn giản giúp bạn chủ động kiểm soát được thời gian truy cập các website giải trí để tâpj trung vào công việc. Hãy thêm các website bạn thường dùng để giải trí, chọn thời gian truy cập theo quy định của riêng bạn, khi hết thời gian tab sẽ tự đóng. Chúc bạn luôn giữ được sự tập trung khi làm việc - ThanhDatIO</p>",
       background: "#353535",
 
       color: "white",
@@ -1315,7 +1315,7 @@ function deleteTab(tab, tabLink) {
 //about added
 document.getElementById('aboutcorner').addEventListener('click',function(){
   Swal.fire({
-    html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Chọn thời gian lướt web và bắt đầu truy cập trang web yêu thích của bạn, khi hết thời gian theo quy định của riêng bạn, tab sẽ tự đóng!</p>",
+    html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Đây là công cụ đơn giản giúp bạn chủ động kiểm soát được thời gian truy cập các website giải trí để tâpj trung vào công việc. Hãy thêm các website bạn thường dùng để giải trí, chọn thời gian truy cập theo quy định của riêng bạn, khi hết thời gian tab sẽ tự đóng. Chúc bạn luôn giữ được sự tập trung khi làm việc - ThanhDatIO</p>",
     background: "#353535",
     color: "white",
     icon: "info",
