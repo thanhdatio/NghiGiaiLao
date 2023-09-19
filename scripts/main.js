@@ -952,7 +952,7 @@ function OpenInNew(min, tab, type) {
 
         document.title = "Bắt đầu nào";
         Swal.fire({
-          title: "Bạn đã đóng tab sớn!",
+          title: "Bạn đã đóng tab sớm!",
           background: "#353535",
           color: "white",
           showCancelButton: "true",
