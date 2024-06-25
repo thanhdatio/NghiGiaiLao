@@ -561,7 +561,7 @@ $(document).ready(function () {
     Lockr.set('pastUser', 'yes');
 
     Swal.fire({
-      html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Đây là công cụ đơn giản có thể giúp bạn chủ động kiểm soát thời gian truy cập các website giải trí, qua đó giữ được sự tập trung vào công việc. Hãy thêm các website bạn thường dùng, chọn thời gian truy cập theo quy định của riêng bạn, tab sẽ tự đóng khi hết thời gian theo quy định. Chúc bạn luôn giữ được sự tập trung khi làm việc - ThanhDatIO, liên hệ với mình qua <a href='https://www.facebook.com/datchuthanh' target='_blank' title='Facebook'>Facebook</a> để được hỗ trợ sử dụng</p>",
+      html: "<p style='font-family:Product Sans; letter-spacing:1px;'>Đây là công cụ đơn giản có thể giúp bạn chủ động kiểm soát thời gian truy cập các website giải trí, qua đó giữ được sự tập trung vào công việc. Hãy thêm các website bạn thường dùng, chọn thời gian truy cập theo quy định của riêng bạn, tab sẽ tự đóng khi hết thời gian theo quy định. Chúc bạn luôn giữ được sự tập trung khi làm việc - ThanhDatIO, liên hệ với mình qua <a href='https://bit.ly/datchuthanh' target='_blank' title='Facebook'>Facebook</a> để được hỗ trợ sử dụng</p>",
       background: "#353535",
 
       color: "white",
